@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8B4B8"/>
+      <stop offset="100%" stop-color="#9C4F5A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <circle cx="400" cy="225" r="55" fill="rgba(255,255,255,0.85)"/>
+  <polygon points="385,200 385,250 425,225" fill="#2E1F22"/>
+  <text x="400" y="330" font-family="sans-serif" font-size="20" fill="#2E1F22" text-anchor="middle">
+    Replace with your demo video (assets/video/demo.mp4)
+  </text>
+</svg>

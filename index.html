@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rhode Lip Gloss — Interactive Showcase</title>
+<meta name="description" content="An interactive multimedia showcase of the Rhode Lip Gloss shade range.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient audio toggle (Audio + Interactivity) -->
+  <button id="audioToggle" class="audio-toggle" aria-pressed="false" aria-label="Play ambient sound">
+    <span class="audio-icon">♪</span>
+    <span class="audio-label">Sound off</span>
+  </button>
+
+  <audio id="ambientAudio" loop preload="none">
+    <!-- Replace with your own royalty-free ambient audio file -->
+    <source src="assets/audio/ambient.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow">rhode</p>
+      <h1 class="hero-title">
+        <span class="line">the gloss</span>
+        <span class="line line-accent">everyone</span>
+        <span class="line">is talking about</span>
+      </h1>
+      <p class="hero-sub">A weightless, hydrating shine in eight shades — built for lips, not for lockers.</p>
+      <a href="#gallery" class="cta-primary">See the shades</a>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="gloss-tube">
+        <div class="tube-cap"></div>
+        <div class="tube-body"></div>
+        <div class="tube-shine"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SHADE GALLERY (Graphics + Interactivity + Animation) -->
+  <section class="gallery" id="gallery">
+    <p class="eyebrow center">shade gallery</p>
+    <h2 class="section-title center">Pick your shine</h2>
+
+    <div class="swatch-row" id="swatchRow" role="list">
+      <!-- Swatch buttons injected by script.js -->
+    </div>
+
+    <div class="shade-display" id="shadeDisplay">
+      <div class="shade-preview" id="shadePreview"></div>
+      <div class="shade-info">
+        <h3 id="shadeName">Peptide</h3>
+        <p id="shadeDesc">A universal clear gloss with a subtle glass-like sheen. Our best seller, for a reason.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT STORY (Text + Graphics + Animation, scroll reveal) -->
+  <section class="story">
+    <div class="story-block reveal">
+      <div class="story-text">
+        <p class="eyebrow">the formula</p>
+        <h2>Glass, not glitter</h2>
+        <p>Rhode Lip Gloss is built on a peptide lip treatment base — hydrating, non-sticky, and buildable from a
+          sheer wash of color to a fuller pigmented finish. No feathering, no tackiness, just glass-like shine
+          that holds up through a full day.</p>
+      </div>
+      <div class="story-visual blob blob-1" aria-hidden="true"></div>
+    </div>
+
+    <div class="story-block reveal reverse">
+      <div class="story-text">
+        <p class="eyebrow">the applicator</p>
+        <h2>Precision, not mess</h2>
+        <p>A soft doe-foot applicator delivers an even, controlled layer every time — no overloading, no
+          drag. Designed for quick reapplication on the go, straight from your bag.</p>
+      </div>
+      <div class="story-visual blob blob-2" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL / DEMO VIDEO (Video) -->
+  <section class="demo">
+    <p class="eyebrow center">see it in motion</p>
+    <h2 class="section-title center">Swatched &amp; styled</h2>
+    <div class="video-wrap">
+      <video id="demoVideo" controls poster="assets/images/poster-placeholder.svg">
+        <!-- Replace with your own product demo / swatch video -->
+        <source src="assets/video/demo.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+    </div>
+    <p class="video-caption">Add your own short demo clip at <code>assets/video/demo.mp4</code> — a swatch test,
+      an application clip, or a short review works well here.</p>
+  </section>
+
+  <!-- CALL TO ACTION FOOTER (Interactivity + Graphics) -->
+  <footer class="cta-footer">
+    <h2>Find your shine.</h2>
+    <p>A student multimedia project exploring interactive product storytelling.</p>
+    <button class="cta-shine" id="shopBtn">Shop the collection</button>
+    <p class="footer-note">Prototype for academic purposes — Multimedia Systems and Applications, Assignment 2.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
